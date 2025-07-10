@@ -1,0 +1,415 @@
+/* Phishing Simulation Styles */
+.phishing-simulation {
+  max-width: 100%;
+}
+
+.simulation-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.simulation-icon {
+  color: var(--warning-color);
+  flex-shrink: 0;
+}
+
+.header-content h1 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+  font-size: 2rem;
+}
+
+.header-content p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.warning-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger-color);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--danger-color);
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.simulation-content {
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+}
+
+/* Step Navigation */
+.step-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 12px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.step.active {
+  color: var(--accent-color);
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.step.active .step-number {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+
+/* Email Selection */
+.email-selection h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.email-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.email-preview {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.email-preview:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: var(--accent-color);
+}
+
+.email-preview.selected {
+  border-color: var(--accent-color);
+  background: rgba(6, 214, 160, 0.1);
+}
+
+.email-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.email-meta {
+  flex: 1;
+}
+
+.email-subject {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.email-sender {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.selected-icon {
+  color: var(--accent-color);
+}
+
+.email-content {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 12px;
+}
+
+.email-content h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.email-body {
+  background: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.email-body pre {
+  color: var(--text-secondary);
+  font-family: inherit;
+  white-space: pre-wrap;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Analysis Section */
+.email-analysis h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.analysis-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.question-card {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.question-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-group,
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.checkbox-label,
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.checkbox-label:hover,
+.radio-label:hover {
+  color: var(--text-primary);
+}
+
+.text-input {
+  width: 100%;
+  background: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--text-primary);
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+/* Results Section */
+.results-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.email-verdict {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.verdict-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 2px solid;
+  min-width: 300px;
+}
+
+.verdict-card.phishing {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: var(--danger-color);
+  color: var(--danger-color);
+}
+
+.verdict-card.safe {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.verdict-icon {
+  margin-bottom: 1rem;
+}
+
+.verdict-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.red-flags-section {
+  margin-bottom: 3rem;
+}
+
+.red-flags-section h3 {
+  color: var(--danger-color);
+  margin-bottom: 1rem;
+}
+
+.red-flags-list {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid var(--danger-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  list-style: none;
+}
+
+.red-flags-list li {
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.red-flags-list li::before {
+  content: '🚩';
+  position: absolute;
+  left: 0;
+}
+
+.red-flags-list li:last-child {
+  margin-bottom: 0;
+}
+
+.learning-section h3 {
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.protection-tips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.tip-card {
+  background: rgba(6, 214, 160, 0.1);
+  border: 1px solid var(--accent-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.tip-card h4 {
+  color: var(--accent-color);
+  margin-bottom: 0.75rem;
+}
+
+.tip-card p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--border-color);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  background: var(--text-secondary);
+  color: var(--primary-color);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .simulation-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .step-navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .step {
+    justify-content: center;
+  }
+  
+  .protection-tips {
+    grid-template-columns: 1fr;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+}
