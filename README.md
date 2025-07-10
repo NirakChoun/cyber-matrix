@@ -2,6 +2,10 @@
 
 An interactive educational cybersecurity website that simulates common cyberattacks in a safe, controlled environment. Built with React and Vite, this platform helps users learn about cybersecurity threats through hands-on experience.
 
+## 🌐 Live Demo
+
+**Try it now:** [https://cyber-matrix-ten.vercel.app/](https://cyber-matrix-ten.vercel.app/)
+
 ## 🛡️ Features
 
 ### Interactive Simulations
@@ -21,40 +25,7 @@ An interactive educational cybersecurity website that simulates common cyberatta
 - Interactive components and animations
 - Clear educational warnings and disclaimers
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v20.14.0 or higher)
-- npm or yarn package manager
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd cyber-matrix
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-4. Open your browser and navigate to `http://localhost:5173`
-
-## 📝 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-
-## 🔒 Security Notice
+##  Security Notice
 
 ⚠️ **EDUCATIONAL USE ONLY**
 
@@ -67,23 +38,7 @@ This platform is designed exclusively for educational purposes. All simulations 
 
 **Do not use the techniques demonstrated here for malicious purposes.**
 
-## 🏗️ Project Structure
-
-```
-src/
-├── components/          # Reusable UI components
-│   ├── Header.jsx      # Navigation header
-│   └── Footer.jsx      # Footer with disclaimers
-├── pages/              # Main application pages
-│   ├── Home.jsx        # Landing page
-│   ├── PhishingSimulation.jsx     # Phishing attack simulation
-│   ├── SQLInjectionSimulation.jsx # SQL injection demo
-│   └── DoSSimulation.jsx          # DoS attack visualization
-├── App.jsx             # Main application component
-└── main.jsx           # Application entry point
-```
-
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 After using this platform, users will understand:
 
@@ -124,15 +79,4 @@ This project is for educational use only. Please respect the educational nature 
 
 ---
 
-**Remember: Use this knowledge to defend, not to attack. Stay ethical!**te
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Remember: Use this knowledge to defend, not to attack. Stay ethical!**
